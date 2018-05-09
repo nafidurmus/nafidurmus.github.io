@@ -4,13 +4,6 @@ title: About
 permalink: /about/
 ---
 
----
-layout: page
-title: About
-permalink: /about/
----
-
-
 
 > Süleyman Demirel üniversitesi Bilgisayar mühendisliği 3. sınıf öğrencisiyim . Aktif olarak  ruby programlama dilleriyle ilgilenmekteyim. 
 
