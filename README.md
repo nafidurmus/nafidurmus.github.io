@@ -1,1 +1,1 @@
-- [nafidurmus.github.io/about](http://nafidurmus.github.io)
+- [nafidurmus.github.io](http://nafidurmus.github.io/about)
