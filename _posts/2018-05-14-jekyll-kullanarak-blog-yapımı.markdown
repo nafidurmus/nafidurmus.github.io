@@ -9,6 +9,7 @@ categories: jekyll blog
 1.) Githubda kullanıcı_adı.github.io adında bir repo oluşturalım.
 
 2.) Kullandığımız işletim sisteminde ruby kurulu olmalı.Debian tabanlı bir sisteme kurulum;
+
 2.1) Sistemi güncelleyelim.
 ```bash
 $ sudo apt-get update
