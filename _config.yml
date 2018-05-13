@@ -16,11 +16,13 @@
 title: nafidurmus
 email: nafidurmus07@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Burayı _config.yml i değiştirerek elde ettim. feed.xml de kullanılabilir.
+  blog
+#  Burayı _config.yml i değiştirerek elde ettim. feed.xml de kullanılabilir.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nafidurmus
 github_username:  nafidurmus
+#instagram_username: nafidurmus
 
 # Build settings
 markdown: kramdown
