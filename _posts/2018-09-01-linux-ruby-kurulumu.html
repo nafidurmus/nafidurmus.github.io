@@ -1,0 +1,76 @@
+---
+title: Linux işletim sistemine(debian tabanlı) Ruby on Rails kurulumu nasıl yapılır
+  ?
+---
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Linux işletim sistemine(debian tabanlı) Ruby on Rails kurulumu nasıl yapılır ?</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Linux işletim sistemine(debian tabanlı) Ruby on Rails kurulumu nasıl yapılır ?</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+1.) Sistemimizi kurulum için hazırlayalım.Hatasız bir şekilde aşağıdaki kodu çalıştıralım.
+</section>
+<section data-field="body" class="e-content">
+<section name="3f98" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="6a3a" id="6a3a" class="graf graf--h3 graf--leading graf--title">Linux işletim sistemine(debian tabanlı) Ruby on Rails kurulumu nasıl yapılır ?</h3><figure name="0e64" id="0e64" class="graf graf--figure graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 380px; max-height: 133px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 35%;"></div><img class="graf-image" data-image-id="1*sjQp9E49-QPu1FffquE18A.png" data-width="380" data-height="133" src="https://cdn-images-1.medium.com/max/800/1*sjQp9E49-QPu1FffquE18A.png"></div></figure><p name="83d0" id="83d0" class="graf graf--p graf-after--figure">1.) Sistemimizi kurulum için hazırlayalım.Hatasız bir şekilde aşağıdaki kodu çalıştıralım.</p><pre name="7e47" id="7e47" class="graf graf--pre graf-after--p">$ sudo apt-get update</pre><p name="3d65" id="3d65" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">Rvm </strong>yüklerken kullanacak olduğumuz <strong class="markup--strong markup--p-strong">curl </strong>indirelim.</p><pre name="295c" id="295c" class="graf graf--pre graf-after--p">$ sudo apt-get install curl</pre><p name="8bcf" id="8bcf" class="graf graf--p graf-after--pre">2.)Rvm kullanarak ruby indirelim.</p><pre name="cd29" id="cd29" class="graf graf--pre graf-after--p">$ \curl -L https://get.rvm.io | bash -s stable --ruby</pre><p name="fda7" id="fda7" class="graf graf--p graf-after--pre">2.1) Eğer <strong class="markup--strong markup--p-strong">rvm </strong>yüklü ise.Aşağıdaki kodları çalıştıralım.</p><pre name="444f" id="444f" class="graf graf--pre graf-after--p">$ rvm get stable --autolibs=enable<br>$ rvm install ruby<br>$ rvm --default use ruby-2.4.2</pre><p name="eb15" id="eb15" class="graf graf--p graf-after--pre">3.) Nodejs indirelim.</p><pre name="8393" id="8393" class="graf graf--pre graf-after--p">$ sudo apt-get install nodejs</pre><p name="84d5" id="84d5" class="graf graf--p graf-after--pre">3.1)Eğer nodejs i indiremediyseniz aşağıdaki kütüphaneyi projenize eklemelisiniz.</p><pre name="6582" id="6582" class="graf graf--pre graf-after--p">gem &#39;therubyracer&#39;</pre><p name="cf60" id="cf60" class="graf graf--p graf-after--pre">4.) Kütüphane yönetimini indirebildik mi diye kontrol edelim.<strong class="markup--strong markup--p-strong">gem -v </strong>çıktısını kontrol edelim.</p><pre name="4030" id="4030" class="graf graf--pre graf-after--p">$ gem -v<br>2.4.2</pre><p name="71ef" id="71ef" class="graf graf--p graf-after--pre">4.1) Sistemi yükseltelim.</p><pre name="a0cc" id="a0cc" class="graf graf--pre graf-after--p">$ gem update --system</pre><p name="949a" id="949a" class="graf graf--p graf-after--pre">5.)Rvm ile gemset i listeleyelim.<strong class="markup--strong markup--p-strong">rvm gemset list </strong>komutunu girince a</p><pre name="ceaa" id="ceaa" class="graf graf--pre graf-after--p">$ rvm gemset list<br><br>gemsets for ruby-2.4.2<br>=&gt; (default)<br>   global</pre><p name="1549" id="1549" class="graf graf--p graf-after--pre">6.)Rvm ile global gemset i kullanmak için aşağıdaki kodları çalıştıralım.</p><pre name="b6f8" id="b6f8" class="graf graf--pre graf-after--p">$ rvm gemset use global<br>$ gem list</pre><p name="bfa5" id="bfa5" class="graf graf--p graf-after--pre">7.)Hızlı kütüphane indirmek için aşağıdaki kodu çalıştıralım.</p><pre name="d2b1" id="d2b1" class="graf graf--pre graf-after--p">$ echo &quot;gem: --no-document&quot; &gt;&gt; ~/.gemrc</pre><p name="397e" id="397e" class="graf graf--p graf-after--pre">7.1)Aşağıdaki kütüphaneleri indirelim.</p><pre name="d7a7" id="d7a7" class="graf graf--pre graf-after--p">$ gem install bundler</pre><pre name="131a" id="131a" class="graf graf--pre graf-after--pre">$ gem install nokogiri</pre><p name="9232" id="9232" class="graf graf--p graf-after--pre">8.)Rails indirme seçeneklerini ayarlayalım.</p><p name="edf3" id="edf3" class="graf graf--p graf-after--p">8.1)Aşağıdaki kod ile ruby ve rails versiyonu nu seçerek proje oluşrurabiliriz.</p><pre name="0e15" id="0e15" class="graf graf--pre graf-after--p">$ rvm use ruby-2.4.2@rails5.2 --create</pre><p name="bc64" id="bc64" class="graf graf--p graf-after--pre">8.2)Rails kütüphanesini indirmek için.</p><pre name="d0e3" id="d0e3" class="graf graf--pre graf-after--p">$ gem install rails</pre><p name="c1eb" id="c1eb" class="graf graf--p graf-after--pre">8.3)Rails versiyonu seçmek için aşağıdaki kodu çalıştırınız.</p><pre name="2934" id="2934" class="graf graf--pre graf-after--p">$ gem install rails --version=3.2.18</pre><p name="4704" id="4704" class="graf graf--p graf-after--pre">Rails versiyonunu kontrol ediniz.</p><pre name="da46" id="da46" class="graf graf--pre graf-after--p">$ rails -v</pre><p name="ad3c" id="ad3c" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">Kurulumu tamamladınız.</strong></p><p name="f65b" id="f65b" class="graf graf--p graf-after--p">— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — -</p><blockquote name="13b2" id="13b2" class="graf graf--blockquote graf-after--p">bash: rvm: command not found</blockquote><p name="9c2f" id="9c2f" class="graf graf--p graf-after--blockquote">Kurulumda yukarıdaki gibi bir hata aldıysanız aşağıdakileri deneyebilirsiniz.</p><p name="308c" id="308c" class="graf graf--p graf-after--p"># &lt;user&gt; yerine kendi kullanıcı adını yazınız.</p><pre name="3bfc" id="3bfc" class="graf graf--pre graf-after--p graf--trailing"><code class="markup--code markup--pre-code">$ \curl -sSL https://get.rvm.io | bash<br>$ source /home/&lt;user&gt;/.rvm/scripts/rvm<br>$ rvm -v<br>$ rvm install ruby<br>$ ruby -v<br>$ sudo apt-get install rubygems<br>$ gem update<br>$ sudo apt-get install ruby-dev zlib1g-dev liblzma-dev build-essential patch<br>$ rvm gemset list<br>$ gem install rails<br>$ rails -v</code></pre></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nafidurmus" class="p-author h-card">nafi durmuş</a> on <a href="https://medium.com/p/ddd040f3dc93"><time class="dt-published" datetime="2018-03-20T18:14:08.107Z">March 20, 2018</time></a>.</p><p><a href="https://medium.com/@nafidurmus/linux-i%C5%9Fletim-sistemine-debian-tabanl%C4%B1-ruby-on-rails-kurulumu-nas%C4%B1l-yap%C4%B1l%C4%B1r-ddd040f3dc93" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 31, 2018.</p></footer></article></body></html>

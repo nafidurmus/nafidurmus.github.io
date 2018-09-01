@@ -1,0 +1,75 @@
+---
+title: Grub ekranına Windows Bootloader ekleme işlemi nasıl yapılır
+---
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Grub ekranına Windows Bootloader ekleme işlemi nasıl yapılır ?</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Grub ekranına Windows Bootloader ekleme işlemi nasıl yapılır ?</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+1.) Terminali açınız ve yazınız
+</section>
+<section data-field="body" class="e-content">
+<section name="8d76" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="90d7" id="90d7" class="graf graf--h3 graf--leading graf--title">Grub ekranına Windows Bootloader ekleme işlemi nasıl yapılır ?</h3><p name="2b17" id="2b17" class="graf graf--p graf-after--h3">1.) Terminali açınız ve yazınız</p><p name="369e" id="369e" class="graf graf--p graf-after--p"><code class="markup--code markup--p-code">sudo nano /etc/grub.d/40_custom</code></p><p name="535b" id="535b" class="graf graf--p graf-after--p">2.) Aşağıdaki satırı ekleyiniz</p><figure name="2de2" id="2de2" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 409px; max-height: 121px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 29.599999999999998%;"></div><img class="graf-image" data-image-id="1*Y7Wpnmgk7bu-GNpErsehiA.png" data-width="409" data-height="121" src="https://cdn-images-1.medium.com/max/800/1*Y7Wpnmgk7bu-GNpErsehiA.png"></div><figcaption class="imageCaption">ekran görüntüsü kopyalamak için aşağıdakini kullanınız.</figcaption></figure><blockquote name="cb33" id="cb33" class="graf graf--blockquote graf-after--figure"><code class="markup--code markup--blockquote-code"><em class="markup--em markup--blockquote-em">menuentry &quot;Windows 7 (loader) (on /dev/sda1)&quot; { insmod part_msdos insmod ntfs set root=&#39;(hd0,msdos1)&#39; chainloader +1 }</em></code></blockquote><p name="2e22" id="2e22" class="graf graf--p graf-after--blockquote">3.) Son olarak aşağıdaki kodu çalıştırınız</p><p name="da86" id="da86" class="graf graf--p graf-after--p graf--trailing"><code class="markup--code markup--p-code">sudo update-grub</code></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nafidurmus" class="p-author h-card">nafi durmuş</a> on <a href="https://medium.com/p/cbd9598200cc"><time class="dt-published" datetime="2018-03-15T17:01:33.430Z">March 15, 2018</time></a>.</p><p><a href="https://medium.com/@nafidurmus/grub-ekran%C4%B1na-windows-bootloader-ekleme-i%C5%9Flemi-nas%C4%B1l-yap%C4%B1l%C4%B1r-cbd9598200cc" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 31, 2018.</p></footer></article></body></html>

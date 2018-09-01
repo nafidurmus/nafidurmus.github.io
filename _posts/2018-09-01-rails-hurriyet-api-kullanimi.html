@@ -1,0 +1,75 @@
+---
+title: Ruby on Rails projesine Hürriyet API eklemek
+---
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Ruby on Rails projesine Hürriyet API eklemek</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Ruby on Rails projesine Hürriyet API eklemek</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Burada haberin başlığını,açıklamasını,haber linkini varsa resmini döndüren mini bir uygulama ile örneklendireceğim.
+</section>
+<section data-field="body" class="e-content">
+<section name="d605" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="17d3" id="17d3" class="graf graf--h3 graf--leading graf--title">Ruby on Rails projesine Hürriyet API eklemek</h3><blockquote name="d84b" id="d84b" class="graf graf--blockquote graf-after--h3"><strong class="markup--strong markup--blockquote-strong">Burada haberin başlığını,açıklamasını,haber linkini varsa resmini döndüren mini bir uygulama ile örneklendireceğim.</strong></blockquote><ol class="postList"><li name="6a6f" id="6a6f" class="graf graf--li graf-after--blockquote">Bir <strong class="markup--strong markup--li-strong">Rails Projesi</strong> oluşturalım ve <strong class="markup--strong markup--li-strong">api </strong>adında bir <strong class="markup--strong markup--li-strong">kontroller</strong> oluşturun.</li><li name="6aeb" id="6aeb" class="graf graf--li graf-after--li"><a href="https://developers.hurriyet.com.tr/" data-href="https://developers.hurriyet.com.tr/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--li-strong">Hürriyet API</strong></a> hesabı oluşturunuz.</li></ol><blockquote name="c139" id="c139" class="graf graf--blockquote graf-after--li"><strong class="markup--strong markup--blockquote-strong">index</strong> adında bir method oluşturalım.</blockquote><blockquote name="56e2" id="56e2" class="graf graf--blockquote graf-after--blockquote">config/routes ın içine <strong class="markup--strong markup--blockquote-strong">get ‘api/index’</strong> adında bir rota belirleyelim.</blockquote><p name="8255" id="8255" class="graf graf--p graf-after--blockquote">4. index metodunu aşağıdaki gibi dolduralım.</p><figure name="2f04" id="2f04" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/nafidurmus/61492f6e2fa19e368212d2a0e87aa83d.js.js"></script><figcaption class="imageCaption"><a href="https://gist.github.com/nafidurmus/61492f6e2fa19e368212d2a0e87aa83d" data-href="https://gist.github.com/nafidurmus/61492f6e2fa19e368212d2a0e87aa83d" class="markup--anchor markup--figure-anchor" rel="nofollow noopener" target="_blank">https://gist.github.com/nafidurmus/61492f6e2fa19e368212d2a0e87aa83d</a></figcaption></figure><p name="aa98" id="aa98" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Api</strong>yi kullanmak için herşey hazır.</p><p name="bb9d" id="bb9d" class="graf graf--p graf-after--p">5. Hurriyet API de dönen değerler aşağıdaki gibidir.Bunlardan istediğimizi çağırabiliriz.Ayrıca JSON formatındadır.</p><figure name="1be6" id="1be6" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 466px; max-height: 350px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 75.1%;"></div><img class="graf-image" data-image-id="1*QsZSAAgutQnKdspuftITnQ.png" data-width="466" data-height="350" src="https://cdn-images-1.medium.com/max/800/1*QsZSAAgutQnKdspuftITnQ.png"></div></figure><p name="c714" id="c714" class="graf graf--p graf-after--figure">6. views/api/<strong class="markup--strong markup--p-strong">index.html.erb</strong> adında bir views sayfası oluşturalım.</p><pre name="ddc3" id="ddc3" class="graf graf--pre graf-after--p">&lt;% <a href="http://twitter.com/hurriyet" data-href="http://twitter.com/hurriyet" class="markup--anchor markup--pre-anchor" title="Twitter profile for @hurriyet" rel="noopener" target="_blank">@hurriyet</a>.each do |a| %&gt;<br>      &lt;% if a[&quot;Files&quot;][0].nil? %&gt;<br>       <br>      &lt;% else %&gt;<br>      &lt;img class=&quot;img&quot; src=&quot;&lt;%= a[&quot;Files&quot;[0]&quot;FileUrl&quot;]%&gt;/100px180/&quot; &gt;<br>      &lt;% end %&gt;<br>      &lt;h5 class=&quot;card-title&quot;&gt;&lt;%= a[&quot;Title&quot;]%&gt;&lt;/h5&gt;<br>      &lt;p class=&quot;card-text&quot;&gt;&lt;%= a[&quot;Description&quot;]%&gt;&lt;/p&gt;<br>      &lt;a href=&quot;&lt;%= a[&quot;Url&quot;]%&gt;&quot; class=&quot;btn btn-primary&quot;&gt;Habere git&lt;/a&gt;<br>  &lt;% end %&gt;</pre><p name="7fb1" id="7fb1" class="graf graf--p graf-after--pre">Yukarıda @hurriyet ile kontrollerdaki değerlere erişebiliyoruz.</p><figure name="ac00" id="ac00" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 437px; max-height: 152px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 34.8%;"></div><img class="graf-image" data-image-id="1*TgXKqzoNLu6LIHDixPyEUQ.png" data-width="437" data-height="152" src="https://cdn-images-1.medium.com/max/800/1*TgXKqzoNLu6LIHDixPyEUQ.png"></div></figure><pre name="32e2" id="32e2" class="graf graf--pre graf-after--figure">&lt;% if a[&quot;Files&quot;][0].nil? %&gt; #benim örneğimde resimleride çekiyorum.Fakat bazı haberlerde yukarıdaki gibi resimler boş geliyor.Burada resim var mı diye kontrol ediyorum.<br><br></pre><p name="5a5e" id="5a5e" class="graf graf--p graf-after--pre">Buradaki if döngüsü resim yoksa ekrana resimsiz , resim varsa resimli bastırmaya yarıyor.</p><figure name="5601" id="5601" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 161px; max-height: 267px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 165.79999999999998%;"></div><img class="graf-image" data-image-id="1*jG3Xg8v6xK0eRA1tlo4LRA.png" data-width="161" data-height="267" src="https://cdn-images-1.medium.com/max/800/1*jG3Xg8v6xK0eRA1tlo4LRA.png"></div></figure><p name="65b1" id="65b1" class="graf graf--p graf-after--figure">Yukadakilerden istediğinize erişebilirsiniz.</p><p name="3ed3" id="3ed3" class="graf graf--p graf-after--p">7. Bir kaç arayüz ayarında sonra aşağıdaki görüntüyü aldı.</p><figure name="47cb" id="47cb" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 335px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 47.9%;"></div><img class="graf-image" data-image-id="1*7QsJSdN3bccxj6QdyPNpaA.png" data-width="1115" data-height="534" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*7QsJSdN3bccxj6QdyPNpaA.png"></div></figure><p name="b3e0" id="b3e0" class="graf graf--p graf-after--figure graf--trailing">8. Daha fazla kaynak için <a href="https://developers.hurriyet.com.tr/" data-href="https://developers.hurriyet.com.tr/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Hürriyet API</a> sitesini ya da<a href="https://github.com/hurriyet/developers.hurriyet.com.tr" data-href="https://github.com/hurriyet/developers.hurriyet.com.tr" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"> Github</a> sayfasını ziyaret edebilirsiniz.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nafidurmus" class="p-author h-card">nafi durmuş</a> on <a href="https://medium.com/p/9c8105a2298d"><time class="dt-published" datetime="2018-08-08T20:56:47.936Z">August 8, 2018</time></a>.</p><p><a href="https://medium.com/@nafidurmus/ruby-on-rails-projesine-h%C3%BCrriyet-api-eklemek-9c8105a2298d" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 31, 2018.</p></footer></article></body></html>

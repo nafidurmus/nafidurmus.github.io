@@ -1,0 +1,75 @@
+---
+title: Rspec Nedir ? Nasıl yapılır ?
+---
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Rspec Nedir ? Nasıl yapılır ?</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Rspec Nedir ? Nasıl yapılır ?</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Nedir ?
+</section>
+<section data-field="body" class="e-content">
+<section name="417d" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="62ea" id="62ea" class="graf graf--h3 graf--leading graf--title">Rspec Nedir ? Nasıl yapılır ?</h3><figure name="c3e5" id="c3e5" class="graf graf--figure graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 266px; max-height: 200px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 75.2%;"></div><img class="graf-image" data-image-id="1*GPB_m7xowrKTtdT-QM8dHw.png" data-width="266" data-height="200" src="https://cdn-images-1.medium.com/max/800/1*GPB_m7xowrKTtdT-QM8dHw.png"></div></figure><h4 name="cf81" id="cf81" class="graf graf--h4 graf-after--figure">Nedir ?</h4><p name="f2ee" id="f2ee" class="graf graf--p graf-after--h4">Ruby ile yazılmış , ruby kodlarını test etmek amacıyla kullanılan test çatısıdır.</p><h4 name="07b3" id="07b3" class="graf graf--h4 graf-after--p">Nasıl Kullanılır ?</h4><blockquote name="8f34" id="8f34" class="graf graf--blockquote graf-after--h4"><em class="markup--em markup--blockquote-em">gem install rspec #buraya </em><a href="https://github.com/dchelimsky/rspec" data-href="https://github.com/dchelimsky/rspec" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank"><em class="markup--em markup--blockquote-em">tıklayarak</em></a><em class="markup--em markup--blockquote-em"> gem sayfasına gidebilirsiniz.</em></blockquote><blockquote name="c3a6" id="c3a6" class="graf graf--blockquote graf-after--blockquote"><em class="markup--em markup--blockquote-em">rspec ‘--’init # yazarken ‘ ’ kullanmadan yaz.</em></blockquote><blockquote name="aeb1" id="aeb1" class="graf graf--blockquote graf-after--blockquote">Klasörün içine gemfile dosyası oluşturmayı unutma ve kullandığım gemleri ekle.</blockquote><p name="ff3b" id="ff3b" class="graf graf--p graf-after--blockquote">Bunları uyguladıktak sonra dosyalar oluşmuş oluyor. spec dosyasının içini değiştirmeyelim .Deneme adlı kod bloğu için test yazıyoruz farz edelim. Spec klosörünün içine hangisi için test yazacak isek örneğin deneme_spec.rb adında bir kod sayfası oluşturmalıyız. Kod sayfasının içine <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">require_relative ‘../deneme’ </em></strong><em class="markup--em markup--p-em">yazdıktan sonra testlerimiz yazmaya başlayabiliriz.</em></p><h4 name="cded" id="cded" class="graf graf--h4 graf-after--p">İyi bir rspec nasıl yazılır ?</h4><p name="4b59" id="4b59" class="graf graf--p graf-after--h4">Projemize başlamadan önce rspeclerimiz yazmaya çalışmalıyız.</p><p name="f1be" id="f1be" class="graf graf--p graf-after--p">Proje oluştuktan sonra rspec yazacak isek,</p><blockquote name="4e31" id="4e31" class="graf graf--blockquote graf-after--p">Kodun ne yaptığını anlamalıyız.</blockquote><blockquote name="0b71" id="0b71" class="graf graf--blockquote graf-after--blockquote">Edge cases leri belirlemeliyiz. #Edge cases “uç noktalar ;beklenmedik durumlar”</blockquote><figure name="97f7" id="97f7" class="graf graf--figure graf-after--blockquote"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 191px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 27.3%;"></div><img class="graf-image" data-image-id="1*JJXF4QuUX9UHD2768YR6AA.png" data-width="803" data-height="219" src="https://cdn-images-1.medium.com/max/800/1*JJXF4QuUX9UHD2768YR6AA.png"></div><figcaption class="imageCaption">yukarıda bahsedilen deneme_spec.rb için örnek test</figcaption></figure><h4 name="2db3" id="2db3" class="graf graf--h4 graf-after--figure">Rspec için kaynaklar</h4><p name="5bf0" id="5bf0" class="graf graf--p graf-after--h4">Anasayfasına <a href="http://rspec.info/" data-href="http://rspec.info/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">buradan</a> , diğer yardımcı site için <a href="https://relishapp.com/rspec" data-href="https://relishapp.com/rspec" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">buradan</a> ve uygulamalı bir site için de <a href="https://semaphoreci.com/community/tutorials/getting-started-with-rspec" data-href="https://semaphoreci.com/community/tutorials/getting-started-with-rspec" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">şuradan</a> ulaşabilirsiniz.</p><p name="22df" id="22df" class="graf graf--p graf-after--p graf--trailing">Elimden geldiğince anlatmaya çalıştım . İyi çalışmalar.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nafidurmus" class="p-author h-card">nafi durmuş</a> on <a href="https://medium.com/p/bcf795160af7"><time class="dt-published" datetime="2017-07-16T14:58:09.679Z">July 16, 2017</time></a>.</p><p><a href="https://medium.com/@nafidurmus/rspec-nedir-nas%C4%B1l-yap%C4%B1l%C4%B1r-bcf795160af7" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 31, 2018.</p></footer></article></body></html>

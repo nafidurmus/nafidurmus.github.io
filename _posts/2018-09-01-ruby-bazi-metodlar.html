@@ -1,0 +1,75 @@
+---
+title: Ruby bazı metodlar
+---
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Ruby bazı metodlar</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Ruby bazı metodlar</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Regexp nedir ?
+</section>
+<section data-field="body" class="e-content">
+<section name="c3b8" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="423a" id="423a" class="graf graf--h3 graf--leading graf--title">Ruby bazı metodlar</h3><p name="c7c7" id="c7c7" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Regexp nedir ?</strong></p><p name="dd26" id="dd26" class="graf graf--p graf-after--p">RegEx, karakter yığınları içerisinde özel belirtilen karakter veya karakter kümelerini bulmak, diğerlerinden ayırmak için kullanılan oldukça gelişmiş bir kütüphanedir. <a href="http://esiyo.net/ruby-ile-regular-expression/116" data-href="http://esiyo.net/ruby-ile-regular-expression/116" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Buradan</a> ayrıntılı bir şekilde bilgi edilebilirsiniz.</p><p name="68bd" id="68bd" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Map metodu nasıl kullanılır ?</strong></p><pre name="6850" id="6850" class="graf graf--pre graf-after--p">d=[13,35,65,85,45]<br>d.map{|x| x+5}<br>#[18,40,70,90,50]</pre><p name="7d44" id="7d44" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">Gsup metodu nasıl kullanılır ?</strong></p><p name="3259" id="3259" class="graf graf--p graf-after--p">’abcde’.gsub(/bda/, ‘123’)<br>=&gt; “abcde” çıktı</p><p name="5f99" id="5f99" class="graf graf--p graf-after--p">’abcde’.gsub(/b.d/, ‘123’)<br>=&gt; “a123e” çıktı</p><p name="ee8d" id="ee8d" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">include ? nasıl kullanılır</strong></p><pre name="3fe9" id="3fe9" class="graf graf--pre graf-after--p">a <strong class="markup--strong markup--pre-strong">=</strong> <strong class="markup--strong markup--pre-strong">[</strong> <strong class="markup--strong markup--pre-strong">&quot;</strong>a<strong class="markup--strong markup--pre-strong">&quot;,</strong> <strong class="markup--strong markup--pre-strong">&quot;</strong>b<strong class="markup--strong markup--pre-strong">&quot;,</strong> <strong class="markup--strong markup--pre-strong">&quot;</strong>c<strong class="markup--strong markup--pre-strong">&quot;</strong> <strong class="markup--strong markup--pre-strong">]</strong><br>a<strong class="markup--strong markup--pre-strong">.</strong><a href="https://apidock.com/ruby/Array/include%3F" data-href="https://apidock.com/ruby/Array/include%3F" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">include?</a><strong class="markup--strong markup--pre-strong">(&quot;</strong>b<strong class="markup--strong markup--pre-strong">&quot;)</strong>   <em class="markup--em markup--pre-em">#=&gt; true</em><br>a<strong class="markup--strong markup--pre-strong">.</strong><a href="https://apidock.com/ruby/Array/include%3F" data-href="https://apidock.com/ruby/Array/include%3F" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">include?</a><strong class="markup--strong markup--pre-strong">(&quot;</strong>z<strong class="markup--strong markup--pre-strong">&quot;)</strong>   <em class="markup--em markup--pre-em">#=&gt; false</em></pre><p name="d35f" id="d35f" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">select nasıl kullanılır ?</strong></p><pre name="522a" id="522a" class="graf graf--pre graf-after--p">a <strong class="markup--strong markup--pre-strong">=</strong> <strong class="markup--strong markup--pre-strong">%w{</strong> a b c d e f <strong class="markup--strong markup--pre-strong">}</strong><br>a<strong class="markup--strong markup--pre-strong">.</strong><a href="https://apidock.com/ruby/Array/select" data-href="https://apidock.com/ruby/Array/select" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">select</a> <strong class="markup--strong markup--pre-strong">{|</strong>v<strong class="markup--strong markup--pre-strong">|</strong> v <strong class="markup--strong markup--pre-strong">=~</strong> <strong class="markup--strong markup--pre-strong">/</strong>[aeiou]<strong class="markup--strong markup--pre-strong">/}</strong>   <em class="markup--em markup--pre-em">#=&gt; [&quot;a&quot;, &quot;e&quot;]</em></pre><p name="d2aa" id="d2aa" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">start_with nasıl kullanılır ?</strong></p><pre name="8628" id="8628" class="graf graf--pre graf-after--p graf--trailing">p <strong class="markup--strong markup--pre-strong">&quot;</strong>hello<strong class="markup--strong markup--pre-strong">&quot;.</strong><a href="https://apidock.com/ruby/String/start_with%3F" data-href="https://apidock.com/ruby/String/start_with%3F" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">start_with?</a><strong class="markup--strong markup--pre-strong">(&quot;</strong>hell<strong class="markup--strong markup--pre-strong">&quot;)</strong>               <em class="markup--em markup--pre-em">#=&gt; true</em><br><br><em class="markup--em markup--pre-em"># returns true if one of the prefixes matches.</em><br>p <strong class="markup--strong markup--pre-strong">&quot;</strong>hello<strong class="markup--strong markup--pre-strong">&quot;.</strong><a href="https://apidock.com/ruby/String/start_with%3F" data-href="https://apidock.com/ruby/String/start_with%3F" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">start_with?</a><strong class="markup--strong markup--pre-strong">(&quot;</strong>heaven<strong class="markup--strong markup--pre-strong">&quot;,</strong> <strong class="markup--strong markup--pre-strong">&quot;</strong>hell<strong class="markup--strong markup--pre-strong">&quot;)</strong>     <em class="markup--em markup--pre-em">#=&gt; true</em><br>p <strong class="markup--strong markup--pre-strong">&quot;</strong>hello<strong class="markup--strong markup--pre-strong">&quot;.</strong><a href="https://apidock.com/ruby/String/start_with%3F" data-href="https://apidock.com/ruby/String/start_with%3F" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">start_with?</a><strong class="markup--strong markup--pre-strong">(&quot;</strong>heaven<strong class="markup--strong markup--pre-strong">&quot;,</strong> <strong class="markup--strong markup--pre-strong">&quot;</strong>paradise<strong class="markup--strong markup--pre-strong">&quot;)</strong> <em class="markup--em markup--pre-em">#=&gt; false</em></pre></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nafidurmus" class="p-author h-card">nafi durmuş</a> on <a href="https://medium.com/p/3bfeece82f89"><time class="dt-published" datetime="2017-07-17T12:56:17.129Z">July 17, 2017</time></a>.</p><p><a href="https://medium.com/@nafidurmus/ruby-baz%C4%B1-metodlar-3bfeece82f89" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 31, 2018.</p></footer></article></body></html>
