@@ -54,7 +54,7 @@ Truffle
 
 # Organizasyonlar ve Sertifikalar
 * **Mustafa Akgül Özgür Yazılım Yaz Kampı**
-  *Ruby on Rails ile Web Programlama
+  * Ruby on Rails ile Web Programlama
 * **Institute of Electrical and Electronics Engineers 2017-2018**
   * SDU Computer Society
 * **Board of European Student of Technology 2016-2017**
