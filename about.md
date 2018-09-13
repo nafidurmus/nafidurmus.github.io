@@ -5,12 +5,11 @@ permalink: /about/
 ---
 
 
-> Süleyman Demirel üniversitesi Bilgisayar mühendisliği 3. sınıf öğrencisiyim . Aktif olarak  ruby programlama dilleriyle ilgilenmekteyim. 
+> Süleyman Demirel üniversitesi Bilgisayar mühendisliği 4. sınıf öğrencisiyim . Aktif olarak  ruby programlama dilleriyle ilgilenmekteyim. 
 
 
 ## **Kişisel Bilgiler**
 * İsim             : Nafi Durmuş
-* Doğum Tarihi     : 10.02.1996
 
 ## **İletişim**
 * Tel : 05312023571
@@ -40,17 +39,22 @@ Zebramo Inc. 2017 yaz stajı
 
 ## **Yetenekler**
 
-Java  
+Ruby / Rails
 
 MySQL 
 
 Prezi
 
-Ruby / Rails
+Java
+
+Solidity
+
+Truffle
 
 
 # Organizasyonlar ve Sertifikalar
-
+* **Mustafa Akgül Özgür Yazılım Yaz Kampı**
+  *Ruby on Rails ile Web Programlama
 * **Institute of Electrical and Electronics Engineers 2017-2018**
   * SDU Computer Society
 * **Board of European Student of Technology 2016-2017**
