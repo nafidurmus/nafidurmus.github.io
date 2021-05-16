@@ -12,7 +12,6 @@ permalink: /about/
 * İsim             : Nafi Durmuş
 
 ## **İletişim**
-* Tel : 05312023571
 * Email : nafidurmus07@gmail.com
 * Skype : nafidurmus07@gmail.com
 * Adres : İslamlar mah. no: 40 Kaş/Antalya
